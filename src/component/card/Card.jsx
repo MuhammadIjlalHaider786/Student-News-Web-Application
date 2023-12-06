@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 import "./Card.scss";
 
-const Card = ({img}) => {
+const Card = (props) => {
   return (
-    
-    <img className='card' src={img} alt="cover" />
-  )
-}
+    <div className="card">
+      <img src={props.img} alt="cover" />
+      <h1>{props.title}</h1>
+    </div>
+  );
+};
 
-export default Card
+export default Card;
