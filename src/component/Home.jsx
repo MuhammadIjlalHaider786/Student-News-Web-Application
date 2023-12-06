@@ -9,7 +9,7 @@ const Home = () => {
       <div className="banner"></div>
 
       <Row title={"Popular News"} />
-      <Row title={"News News"} />
+      <Row title={"News"} />
       <Row title={"Arts News"} />
       <Row title={"Sports News"} />
     </section>

@@ -1,16 +1,15 @@
-$bg:rgb(235, 230, 230);
+$bg: rgb(235, 230, 230);
 
-.row{
-    padding: 1rem;
-    background-color: $bg;
+.row {
+  padding: 1rem;
+  background-color: $bg;
 
-    h2{
-        font-weight: 400;
-        margin: 0.5rem;
-    }
+  h2 {
+    font-weight: 400;
+    margin: 0.5rem;
+  }
 
-    div{
-        display: flex;
-        overflow-x: auto;
-    }
+  div {
+    overflow-x: auto;
+  }
 }
