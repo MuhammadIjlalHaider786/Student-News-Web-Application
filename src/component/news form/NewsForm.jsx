@@ -16,6 +16,7 @@ const NewsForm = ({ onAddNews, onClose }) => {
     onAddNews(newsData);
     onClose();
   };
+
   return (
     <div className="news-form-overlay">
       <div className="news-form-content">
