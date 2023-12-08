@@ -1,0 +1,75 @@
+.news-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+.news-form-content {
+  width: 50%;
+  max-width: 600px; /* Set your desired max-width */
+  padding: 20px;
+  background-color: #fff; /* Background color for the form */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.news-form-content {
+  position: relative; /* Make the position relative for absolute positioning of the close button */
+  /* ... (rest of the existing styles) */
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    width: 5%;
+    margin: 0;
+
+    .close-btn:hover {
+      color: #000;
+    }
+  }
+}

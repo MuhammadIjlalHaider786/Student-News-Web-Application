@@ -1,8 +1,9 @@
+// Card.js
 import React, { useState } from "react";
 import "./Card.scss";
 import PopUp from "../popup/PopUp";
 
-const Card = ({ img }) => {
+const Card = ({ img, title }) => {
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
 
   const handleReadClick = () => {
@@ -19,8 +20,10 @@ const Card = ({ img }) => {
         <img src={img} alt="cover" />
       </div>
       <div className="main">
-        <h1>Title</h1>
-        <button className="btn" onClick={handleReadClick}>Read</button>
+        <h1>{title}</h1>
+        <button className="btn" onClick={handleReadClick}>
+          Read
+        </button>
         {isPopUpOpen && <PopUp onClose={handleCloseClick} />}
       </div>
     </>
